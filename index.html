@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TOGA Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🌿 TOGA DIGITAL</h1>
+
+        <p>
+            Tanaman Obat Keluarga
+        </p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="#beranda">Beranda</a>
+
+        <a href="#tentang">Tentang</a>
+
+        <a href="#tanaman">Tanaman</a>
+
+        <a href="#kontak">Kontak</a>
+
+    </nav>
+
+
+    <section id="beranda">
+
+        <h2>
+            Selamat Datang di TOGA Digital
+        </h2>
+
+        <p>
+            Kenali berbagai tanaman obat
+            yang dapat dibudidayakan di sekitar rumah.
+        </p>
+
+    </section>
+
+
+    <section id="tentang">
+
+        <h2>Tentang TOGA</h2>
+
+        <p>
+            TOGA atau Tanaman Obat Keluarga
+            merupakan tanaman yang dapat
+            dibudidayakan di lingkungan rumah.
+        </p>
+
+    </section>
+
+
+    <section id="tanaman">
+
+    <h2>🌱 Tanaman TOGA</h2>
+
+    <div class="pencarian">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Cari tanaman..."
+        onkeyup="cariTanaman()">
+
+</div>
+
+    <div class="container-tanaman">
+
+    <!-- KENCUR -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/kencur.jpg" alt="Tanaman Kencur">
+        </div>
+
+        <h3>Kencur</h3>
+        <i>Kaempferia galanga</i>
+
+        <p>
+            Tanaman rimpang dengan aroma khas yang
+            banyak digunakan sebagai bumbu dan bahan
+            minuman tradisional.
+        </p>
+
+        <button onclick="lihatInfo('Kencur')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- LENGKUAS -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/lengkuas.jpg" alt="Tanaman Lengkuas">
+        </div>
+
+        <h3>Lengkuas</h3>
+        <i>Alpinia galanga</i>
+
+        <p>
+            Tanaman rimpang yang sering digunakan
+            sebagai bumbu untuk memberikan aroma
+            pada masakan.
+        </p>
+
+        <button onclick="lihatInfo('Lengkuas')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- JAHE MERAH -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/jahe merah.jpg" alt="Tanaman Jahe Merah">
+        </div>
+
+        <h3>Jahe Merah</h3>
+        <i>Zingiber officinale var. rubrum</i>
+
+        <p>
+            Varietas jahe dengan rimpang berwarna
+            kemerahan dan aroma yang khas.
+        </p>
+
+        <button onclick="lihatInfo('Jahe Merah')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- KUNYIT -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/kunyit.jpg" alt="Tanaman Kunyit">
+        </div>
+
+        <h3>Kunyit</h3>
+        <i>Curcuma longa</i>
+
+        <p>
+            Tanaman rimpang berwarna kuning-oranye
+            yang banyak digunakan sebagai rempah.
+        </p>
+
+        <button onclick="lihatInfo('Kunyit')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- DAUN KELOR -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/daun kelor.jpg" alt="Daun Kelor">
+        </div>
+
+        <h3>Daun Kelor</h3>
+        <i>Moringa oleifera</i>
+
+        <p>
+            Tanaman yang daunnya dapat dimanfaatkan
+            sebagai bahan pangan.
+        </p>
+
+        <button onclick="lihatInfo('Daun Kelor')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- DAUN SALAM -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/daun salam.jpg" alt="Daun Salam">
+        </div>
+
+        <h3>Daun Salam</h3>
+        <i>Syzygium polyanthum</i>
+
+        <p>
+            Daun aromatik yang umum digunakan
+            untuk menambah aroma masakan.
+        </p>
+
+        <button onclick="lihatInfo('Daun Salam')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- LIDAH BUAYA -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/lidah buaya.jpg" alt="Lidah Buaya">
+        </div>
+
+        <h3>Lidah Buaya</h3>
+        <i>Aloe vera</i>
+
+        <p>
+            Tanaman sukulen dengan daun tebal
+            yang relatif mudah dirawat.
+        </p>
+
+        <button onclick="lihatInfo('Lidah Buaya')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- KUMIS KUCING -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/kumis kucing.jpg" alt="Kumis Kucing">
+        </div>
+
+        <h3>Kumis Kucing</h3>
+        <i>Orthosiphon aristatus</i>
+
+        <p>
+            Tanaman berbunga dengan benang sari
+            panjang yang tampak menyerupai kumis.
+        </p>
+
+        <button onclick="lihatInfo('Kumis Kucing')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+
+    <!-- SERAI -->
+    <div class="card">
+
+        <div class="gambar">
+            <img src="gambar/serai.jpg" alt="Tanaman Serai">
+        </div>
+
+        <h3>Serai</h3>
+        <i>Cymbopogon citratus</i>
+
+        <p>
+            Tanaman beraroma khas yang sering
+            digunakan sebagai bumbu masakan
+            dan bahan minuman.
+        </p>
+
+        <button onclick="lihatInfo('Serai')">
+            Lihat Informasi
+        </button>
+
+    </div>
+
+</div>
+
+            <button>
+                Lihat Informasi
+            </button>
+
+        </div>
+
+    </div>
+
+<section id="kontak">
+    ...
+</section>
+
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <button
+            class="tutup"
+            onclick="tutupPopup()">
+            ×
+        </button>
+
+        <div class="popup-icon">
+            🌿
+        </div>
+
+        <h2 id="judul-popup"></h2>
+
+        <p class="nama-ilmiah">
+            <i id="ilmiah-popup"></i>
+        </p>
+
+        <hr>
+
+        <h3>🌱 Tentang Tanaman</h3>
+        <p id="deskripsi-popup"></p>
+
+        <h3>🍃 Bagian yang Dimanfaatkan</h3>
+        <p id="bagian-popup"></p>
+
+        <h3>💧 Cara Perawatan</h3>
+        <p id="perawatan-popup"></p>
+
+        <div class="catatan">
+            ⚠️ Informasi ini bersifat edukasi umum.
+        </div>
+
+        <button
+            class="tombol-tutup"
+            onclick="tutupPopup()">
+            Tutup
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>KUKERTA UNIVERSITAS ABDURRAB 2026</p>
+</footer>
+
+
+<script src="script.js"></script>
